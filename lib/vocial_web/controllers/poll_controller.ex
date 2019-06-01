@@ -9,7 +9,6 @@ defmodule VocialWeb.PollController do
 
   def new(conn, _params) do
     poll = Votes.new_poll()
-    IO.puts()
     render(conn, "new.html", poll: poll)
   end
 
