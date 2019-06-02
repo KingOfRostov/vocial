@@ -3,11 +3,19 @@
         <%= label f, :username, "Username:" %>
         <br />
         <%= text_input f, :username %>
-        <br/>
-        <%=label f, :email, "Email:" %>
+        <br />
+        <%= label f, :email, "Email:" %>
         <br />
         <%= text_input f, :email %>
-        <br/>
+        <br />
+        <%= label f, :password, "Password:" %>
+        <br />
+        <%= password_input f, :password %>
+        <br />
+        <%= label f, :password_confirmation, "Confirm your password:" %>
+        <br />
+        <%= password_input f, :password_confirmation %>
+        <br />
         <%= submit "Sign Up" %>
     <% end %>
 </div>
